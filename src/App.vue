@@ -109,8 +109,6 @@ onMounted(async () => {
       r.alt = r.explanation;
       return r.media_type === "image";
     }).reverse();
-    console.log('res', res);
-
     slides.value = res;
     currImg.value = res[0];
   } catch (error) {
