@@ -208,11 +208,11 @@ $border-radius: 6px;
 		padding: 0;
 		border: 0;
 		overflow: auto;
-		padding: 1px;
-		background: transparent;
+		background: black;
+		box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.899);
 	}
 	&::backdrop {
-		background-color: hsla(60, 5%, 5%, 80%);
+		background-color: hsla(0, 0%, 11%, 0.937);
 	}
 	&:focus {
 		border: 0;
@@ -224,11 +224,13 @@ $border-radius: 6px;
 	border-radius: 0;
 	max-width: 100%;
 	max-height: 100%;
+	object-fit: contain;
 }
 .apod__close {
 	cursor: pointer;
 	position: absolute;
 	right: 0;
+	top: 0;
 	border: 0;
 	width: 26px;
 	height: 26px;
